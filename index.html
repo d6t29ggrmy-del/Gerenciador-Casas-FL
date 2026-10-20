@@ -2,19 +2,21 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<!-- Gerenciador de Casas | v1.3 · 28-set-26 · 7:37 pm | última alteração: tipo de imóvel Apartamento -->
+<!-- Gerenciador de Viagens | v1.5 | 20/10/2026 18:35 | última alteração: botões Atualizar/Desconectar no cabeçalho, selo na última linha à direita | v1.4 | 12/10/2026 11:20 | alteração anterior: lista de voos encontrados por combinação de datas no cartão -->
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
-<title>Gerenciador de Casas</title>
-<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAACaUlEQVR42u3dzU3DQBCAUWeUDjhQA7VwSAPcqAKJIxJVcKMBykoXNABGwQTPz/vuSPbu0+IBEw43d/eL9FVhCQSH4BAcgkNwCA7BITgEh+CQ4BAcgkNwCA7BITgEh+AQHBIcgkNwCA7BITgEh+AQHIJDgkNwCI6NPby+WQQ4vpXBBxxrZwYfcKx9N+FjWZbD8E8T/BHB+9Ojk4MMj6hwXL7rY30EGXzAsXWnB/oIMvgwrfzl1g4ZYYIMR8hoHNfYywk+ggw+huK49v719hFk8DEOx3/uWVcfDUfZHbeq2YgbZDhCRuDIsDedfAQZfDTHkW0/evgIMvjoOa2U2IC6I0yQ4Tq74ai14kV9BBmuuQ+Ouqd0uSsP6+v6O+Do8cODQndRY5Rt+WvP/CNukOG+quLo/apV8rsLa+ce6+GY8xdEae80rJf7LTOtDP/UlFQjTJBhBQrgICPbOoQV4SM1DjJyrklYBT6S4iAj8/rsNspikX/EDTIcIYlwkFFl3YIMPlLgIKPWGgYZfOw5rWBRdIQJMhwh++Ago7SPIIOPPZ85YMr2MJFxlFWt4BAcgkNwCA7BITgEh+BQ+45VLvT5dHvpl7x8nF2bk0NwCA7BITgEh+AQHBIcWuk47YY3vrs76i1oJ4fgEByCQ3AIDhllN5X57ZgSb+44OQSH4BAcgkNwCA7BITgkOASH4BAcgkNwCA7BITgEhwSH4BAcgkNwCA7BITgEh+CQ4BAc+k2J/pe9nByCQ3AIDsEhwSE4BIfgEByCQ3AIDsEhOCQ4BIfgEByCQ3AIDsEhOASH4JDgEByCQ3AIDsGhOn0CXii07bihBQkAAAAASUVORK5CYII=">
-<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAACaUlEQVR42u3dzU3DQBCAUWeUDjhQA7VwSAPcqAKJIxJVcKMBykoXNABGwQTPz/vuSPbu0+IBEw43d/eL9FVhCQSH4BAcgkNwCA7BITgEh+CQ4BAcgkNwCA7BITgEh+AQHBIcgkNwCA7BITgEh+AQHIJDgkNwCI6NPby+WQQ4vpXBBxxrZwYfcKx9N+FjWZbD8E8T/BHB+9Ojk4MMj6hwXL7rY30EGXzAsXWnB/oIMvgwrfzl1g4ZYYIMR8hoHNfYywk+ggw+huK49v719hFk8DEOx3/uWVcfDUfZHbeq2YgbZDhCRuDIsDedfAQZfDTHkW0/evgIMvjoOa2U2IC6I0yQ4Tq74ai14kV9BBmuuQ+Ouqd0uSsP6+v6O+Do8cODQndRY5Rt+WvP/CNukOG+quLo/apV8rsLa+ce6+GY8xdEae80rJf7LTOtDP/UlFQjTJBhBQrgICPbOoQV4SM1DjJyrklYBT6S4iAj8/rsNspikX/EDTIcIYlwkFFl3YIMPlLgIKPWGgYZfOw5rWBRdIQJMhwh++Ago7SPIIOPPZ85YMr2MJFxlFWt4BAcgkNwCA7BITgEh+BQ+45VLvT5dHvpl7x8nF2bk0NwCA7BITgEh+AQHBIcWuk47YY3vrs76i1oJ4fgEByCQ3AIDhllN5X57ZgSb+44OQSH4BAcgkNwCA7BITgkOASH4BAcgkNwCA7BITgEhwSH4BAcgkNwCA7BITgEh+CQ4BAc+k2J/pe9nByCQ3AIDsEhwSE4BIfgEByCQ3AIDsEhOCQ4BIfgEByCQ3AIDsEhOASH4JDgEByCQ3AIDsGhOn0CXii07bihBQkAAAAASUVORK5CYII=">
-<meta name="apple-mobile-web-app-title" content="Casas FL">
+<title>Gerenciador de Viagens</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAFMUlEQVR4nO3d0XUTMRBG4QknHaSJJK0kJfBGFVRAFbxRArVw6CY8BJ3Yjr279mqkmX/uVwDR7twVwjbO3cPTy5sBIr7MXgDQE0FDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFjs79/fs9ewqr72QtAbBkiPkTQOLIU8OPz68CV3IagkW4XXkLQRSlFfIigi9gbcIbjhhlBS1PdhZfwsp2oijGbEbSkqjGbEbQcj5iznJ/NCFpK5Z25IWgRxPyOoAV4xpzpuGE2MWh2lD64j8emvA7dhnA4jGw7QQTE/Nndw9PL28gfuGUIxL1uRMwZ5zB0h946BHbuZezMlw0L+tYhEPcxYl42JOheQ6geNzGvcz9DjxqCeuCjY856P1136JFDUN692Zm3c9uhowwhe9wz7mPme+YSdJSYT2UbFDFfr3vQUWM+FX1wxHwb+SPHFtEGScy3k3mVo5fZgyXmfYa99Z0tbLPxgybm/UJ+liMi78ETcx/Dg26yhm3WPwRi7mda0E3msJs9cRBzX9ODbhTCNrsuFmLuL0zQZjpRN0vxELOPUEE3amGbHcdEzH5CBt0ohj1DlZjNggfdEPbtKsVsliTohrCvUy1ms2RBN4S9rmLMZkmDbgj7vKoxmyUPuiHsD5VjNhMJuqkedvWYzcSCbiqGTczvJINuqoRNzB+kg26UwybmYyWCbtTCJubPSgXdKIRNzOeV/MLz7DFkX7+nkjv0oWy7NTEvKx90kyFsYl5X8shxzuPzK8EIYIe+IOqOzUO3jB36AnbsnAh6BWHnQtAbRDp+RFpLRAS9goByIegFxJwPQV8QOebIa5uNoM8gmLwI+gQx50bQBzLFnGmtIxH0fwSigaCNmJWUDzpzzJnX7qV00AShp2zQxKypZNDErKtc0Goxq13PXqWC5pvz9ZUJmphrKBH07JgVf2lnVPJBz44ZY0kHHSlmIh9DNuhIMY/AsePd0KBH3fSoMbNL+7sf9YNaZGux7R161JgxxpAvmukV2Vo4WWL2XGf1h8t9h+45vGjnxOrxROR6ho4WYE97YuZB8OMWNDHPoXzft3AJWvmm9oo58kORWfegiRkzub3KoRa2V8xe96nqw+d2hlb61k6V66jA/Z3C7GF7rz3zvYlo2FvfGQeXcc2N2pFvq6Gf5ci0W49cZ5Z7ksGUT9tFDzvy2rAsxC8NivTXo9pHQKs9nCE+Dx1lx46wBuwTIuhmZtgRYo6whuxCBd2MDls5pEjHuRFCBt0oh3ZJxWvuKXTQZnHO18ghfNBNpbB7X2elY0eaoBuPsCMOvMrD21u6oBsGjnPSBl0BD+31UgfNwLeLeKzykDroCnhor5M+aAaOQ+mDrqDXQ1vh2CERNLs0Gomge4i+e/HQbiMTNAPfJvqDu5dM0BXw0K6TCpqBQyroCno8tMrHDrmg2aVrkwvaTD9q9evbY8j/+v7646f3j0ASv75/c/3zXYMmZFziFbbkkQN1uQXN7owlXn2wQ0MKQUOKW9De/5pFbvyjENiA16ExVOrXoaM5/QyD2jtu6te3Rdkjh/qw1a/vklJBtyGrDlv9+rYodeSAvlI7NPQRNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKT8AyJ+2ZJi2s4XAAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAFMUlEQVR4nO3d0XUTMRBG4QknHaSJJK0kJfBGFVRAFbxRArVw6CY8BJ3Yjr279mqkmX/uVwDR7twVwjbO3cPTy5sBIr7MXgDQE0FDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFDCkFjs79/fs9ewqr72QtAbBkiPkTQOLIU8OPz68CV3IagkW4XXkLQRSlFfIigi9gbcIbjhhlBS1PdhZfwsp2oijGbEbSkqjGbEbQcj5iznJ/NCFpK5Z25IWgRxPyOoAV4xpzpuGE2MWh2lD64j8emvA7dhnA4jGw7QQTE/Nndw9PL28gfuGUIxL1uRMwZ5zB0h946BHbuZezMlw0L+tYhEPcxYl42JOheQ6geNzGvcz9DjxqCeuCjY856P1136JFDUN692Zm3c9uhowwhe9wz7mPme+YSdJSYT2UbFDFfr3vQUWM+FX1wxHwb+SPHFtEGScy3k3mVo5fZgyXmfYa99Z0tbLPxgybm/UJ+liMi78ETcx/Dg26yhm3WPwRi7mda0E3msJs9cRBzX9ODbhTCNrsuFmLuL0zQZjpRN0vxELOPUEE3amGbHcdEzH5CBt0ohj1DlZjNggfdEPbtKsVsliTohrCvUy1ms2RBN4S9rmLMZkmDbgj7vKoxmyUPuiHsD5VjNhMJuqkedvWYzcSCbiqGTczvJINuqoRNzB+kg26UwybmYyWCbtTCJubPSgXdKIRNzOeV/MLz7DFkX7+nkjv0oWy7NTEvKx90kyFsYl5X8shxzuPzK8EIYIe+IOqOzUO3jB36AnbsnAh6BWHnQtAbRDp+RFpLRAS9goByIegFxJwPQV8QOebIa5uNoM8gmLwI+gQx50bQBzLFnGmtIxH0fwSigaCNmJWUDzpzzJnX7qV00AShp2zQxKypZNDErKtc0Goxq13PXqWC5pvz9ZUJmphrKBH07JgVf2lnVPJBz44ZY0kHHSlmIh9DNuhIMY/AsePd0KBH3fSoMbNL+7sf9YNaZGux7R161JgxxpAvmukV2Vo4WWL2XGf1h8t9h+45vGjnxOrxROR6ho4WYE97YuZB8OMWNDHPoXzft3AJWvmm9oo58kORWfegiRkzub3KoRa2V8xe96nqw+d2hlb61k6V66jA/Z3C7GF7rz3zvYlo2FvfGQeXcc2N2pFvq6Gf5ci0W49cZ5Z7ksGUT9tFDzvy2rAsxC8NivTXo9pHQKs9nCE+Dx1lx46wBuwTIuhmZtgRYo6whuxCBd2MDls5pEjHuRFCBt0oh3ZJxWvuKXTQZnHO18ghfNBNpbB7X2elY0eaoBuPsCMOvMrD21u6oBsGjnPSBl0BD+31UgfNwLeLeKzykDroCnhor5M+aAaOQ+mDrqDXQ1vh2CERNLs0Gomge4i+e/HQbiMTNAPfJvqDu5dM0BXw0K6TCpqBQyroCno8tMrHDrmg2aVrkwvaTD9q9evbY8j/+v7646f3j0ASv75/c/3zXYMmZFziFbbkkQN1uQXN7owlXn2wQ0MKQUOKW9De/5pFbvyjENiA16ExVOrXoaM5/QyD2jtu6te3Rdkjh/qw1a/vklJBtyGrDlv9+rYodeSAvlI7NPQRNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKT8AyJ+2ZJi2s4XAAAAAElFTkSuQmCC">
+<meta name="apple-mobile-web-app-title" content="Viagens">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <style>
 :root{--navy:#13294B;--ceu:#6FB0E8;--papel:#F5F8FB;--tinta:#1C2430;--suave:#5B6B80;--input:#EBFFFF;--ok:#2E7D55;--alerta:#B7791F;--erro:#B03A2E;--linha:#D5DEE8;
  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
 *,*::before,*::after{box-sizing:inherit}
-html{font-size:17px}
+html{scroll-padding-top:env(safe-area-inset-top,0px);font-size:17px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+/* computador (mouse/trackpad): tudo escala com a janela; mínimo 10px, sem máximo */
+@media (hover:hover) and (pointer:fine){html{font-size:max(10px,1.415vw)}body{min-width:707px}}
 body{margin:0;background:var(--papel);color:var(--tinta);font-family:Calibri,Carlito,"Segoe UI",-apple-system,Helvetica,Arial,sans-serif;font-size:1rem;line-height:1.45}
 header{background:var(--navy);color:#fff;padding:1.2941rem 1.1765rem 1.5294rem}
 header .wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:0.7059rem;flex-wrap:wrap}
@@ -24,25 +26,22 @@ header p{margin:0.2353rem 0 0;color:#BFD6EE;font-size:0.9412rem}
 main{padding:1.1765rem}
 section{margin-bottom:1.6471rem}
 h2{font-size:1.2941rem;margin:0 0 0.7059rem;color:var(--navy)}
-h3{font-size:0.8824rem;text-transform:uppercase;letter-spacing:.06em;color:var(--suave);margin:1.0588rem 0 0.5882rem;font-weight:700}
-h3:first-of-type{margin-top:0.2353rem}
-.lado{display:flex;flex-direction:column;align-items:flex-end;gap:0.5882rem}
 .cota{min-width:12.9412rem}
-.stamp{background:#0B1A30;border:1px solid rgba(255,255,255,.22);border-radius:0.5882rem;padding:0.3529rem 0.7059rem;color:#A9D4F5;font-weight:700;font-size:0.8824rem;line-height:1.3;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .cota .num{font-size:0.8824rem;color:#DCE9F6}
 .barra{height:0.4706rem;background:rgba(255,255,255,.18);border-radius:0.2353rem;overflow:hidden;margin-top:0.3529rem}
 .barra i{display:block;height:100%;background:var(--ceu);width:0}
+.lado{display:flex;flex-direction:column;align-items:flex-end;gap:0.7059rem}
+.selo{background:#1F252D;border:1px solid #3A4452;border-radius:0.5882rem;padding:0.3529rem 0.8235rem;color:#A9D6F5;font-weight:700;font-size:0.8235rem;line-height:1.35;text-align:right;white-space:nowrap}
 .barra i.alto{background:#F2B544}
 form,.painel{background:#fff;border:1px solid var(--linha);border-radius:0.5882rem;padding:1.0588rem}
 .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));gap:0.8235rem}
-.grade>div{min-width:0}
 label{display:block;font-size:0.8824rem;color:var(--suave);margin-bottom:0.2353rem}
-input,select,textarea{width:100%;font:inherit;color:var(--tinta);background:var(--input);border:1px solid #9FC4CC;border-radius:0.3529rem;padding:0.5882rem 0.6471rem;min-height:2.5882rem}
-textarea{min-height:3.7647rem;resize:vertical}
-input:focus,select:focus,textarea:focus,button:focus-visible{outline:0.1765rem solid var(--ceu);outline-offset:1px}
-.opcoes{display:flex;flex-wrap:wrap;gap:0.4706rem}
-.opcoes label{display:flex;align-items:center;gap:0.4706rem;margin:0;background:var(--input);color:var(--tinta);border:1px solid #9FC4CC;border-radius:0.3529rem;padding:0.4706rem 0.7059rem;min-height:2.5882rem;cursor:pointer;font-size:0.9412rem}
-.opcoes input{width:auto;min-height:0;margin:0;accent-color:var(--navy)}
+input,select{width:100%;font:inherit;color:var(--tinta);background:var(--input);border:1px solid #9FC4CC;border-radius:0.3529rem;padding:0.5882rem 0.6471rem;min-height:2.5882rem}
+input:focus,select:focus,button:focus-visible{outline:3px solid var(--ceu);outline-offset:1px}
+.grade>div{min-width:0}
+input[type="date"]{-webkit-appearance:none;appearance:none;display:block;min-width:0;max-width:100%;height:2.5882rem;line-height:1.2941rem}
+input[type="date"]::-webkit-date-and-time-value{text-align:left;margin:0}
+input[type="date"]::-webkit-calendar-picker-indicator{margin:0}
 .dica{font-size:0.8235rem;color:var(--suave);margin-top:0.2353rem}
 .lembrete{background:#FFF7E6;border-left:0.2353rem solid var(--alerta);padding:0.4706rem 0.7059rem;border-radius:0.2353rem;font-size:0.8824rem;margin:0 0 0.8235rem}
 button{font:inherit;border:0;border-radius:0.3529rem;padding:0.5882rem 0.9412rem;min-height:2.5882rem;cursor:pointer}
@@ -55,38 +54,66 @@ button:disabled{opacity:.5;cursor:default}
 .aviso{color:var(--alerta);font-weight:700}.erro{color:var(--erro);font-weight:700}.certo{color:var(--ok);font-weight:700}
 .acoes{display:flex;gap:0.5882rem;flex-wrap:wrap;margin-top:0.9412rem}
 #msg{min-height:1.4118rem;margin-top:0.5882rem}
-/* cartão de busca: ficha de imóvel com canhoto */
-.ficha{display:grid;grid-template-columns:1fr auto;background:#fff;border:1px solid var(--linha);border-radius:0.5882rem;margin-bottom:0.8235rem;position:relative;overflow:hidden}
-.ficha .corpo{padding:0.9412rem 1.0588rem}
-.ficha .canhoto{padding:0.9412rem 1.0588rem;border-left:2px dashed var(--linha);display:flex;flex-direction:column;justify-content:center;gap:0.4706rem;min-width:10rem;background:#FAFCFE;position:relative}
-.ficha .canhoto::before,.ficha .canhoto::after{content:"";position:absolute;left:-11px;width:1.1765rem;height:1.1765rem;border-radius:50%;background:var(--papel);border:1px solid var(--linha)}
-.ficha .canhoto::before{top:-11px}.ficha .canhoto::after{bottom:-11px}
-.local{font-size:1.6471rem;font-weight:700;color:var(--navy);line-height:1.1}
-.local small{font-size:0.9412rem;font-weight:400;color:var(--suave);margin-left:0.3529rem}
+/* cartão de viagem: canhoto de cartão de embarque */
+.bilhete{display:grid;grid-template-columns:1fr auto;background:#fff;border:1px solid var(--linha);border-radius:0.5882rem;margin-bottom:0.8235rem;position:relative;overflow:hidden}
+.bilhete .corpo{padding:0.9412rem 1.0588rem}
+.bilhete .canhoto{padding:0.9412rem 1.0588rem;border-left:2px dashed var(--linha);display:flex;flex-direction:column;justify-content:center;gap:0.4706rem;min-width:10rem;background:#FAFCFE}
+.bilhete .canhoto{position:relative}
+.bilhete .canhoto::before,.bilhete .canhoto::after{content:"";position:absolute;left:-0.6471rem;width:1.1765rem;height:1.1765rem;border-radius:50%;background:var(--papel);border:1px solid var(--linha)}
+.bilhete .canhoto::before{top:-0.6471rem}.bilhete .canhoto::after{bottom:-0.6471rem}
+.rota{font-size:1.6471rem;font-weight:700;color:var(--navy);line-height:1.1}
+.rota small{font-size:0.9412rem;font-weight:400;color:var(--suave);margin-left:0.3529rem}
 .meta{color:var(--suave);font-size:0.8824rem;margin-top:0.2353rem}
 .precos{margin-top:0.4706rem;font-size:0.9412rem}
-.estado{display:inline-block;align-self:center;width:max-content;font-size:0.8235rem;padding:2px 0.4706rem;border-radius:0.5882rem;background:#E6F4EC;color:var(--ok)}
-.estado.aluguel{background:#FFF1D6;color:var(--alerta)}
+.estado{display:inline-block;align-self:center;width:max-content;font-size:0.8235rem;padding:0.1176rem 0.4706rem;border-radius:0.5882rem;background:#E6F4EC;color:var(--ok)}
+.estado.aguardando{background:#FFF1D6;color:var(--alerta)}
 .editar{display:none;gap:0.4706rem;margin-top:0.5882rem}
 .editar.aberto{display:flex}
-.editar input{max-width:9.4118rem}
+.editar input{max-width:8.2353rem}
+.editarDatas{display:none;flex-wrap:wrap;align-items:flex-end;gap:0.4706rem;margin-top:0.5882rem}
+.editarDatas.aberto{display:flex}
+.editarDatas label{margin:0}
+.editarDatas .data{width:11.5rem}
+.data{position:relative;display:flex;gap:0.3529rem}
+.verVoos{margin-top:0.5882rem;background:none;padding:0;min-height:0;color:var(--navy);font-weight:700;text-decoration:underline;text-underline-offset:0.18rem}
+.voos{display:none;margin-top:0.5882rem}
+.voos.aberto{display:block}
+.voos .quando{font-size:0.8235rem;color:var(--suave);margin-bottom:0.3529rem}
+.voos .rolar{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.voos table{border-collapse:collapse;width:100%;font-size:0.8824rem;min-width:30rem}
+.voos th{text-align:left;font-weight:400;color:var(--suave);padding:0.2941rem 0.4706rem;border-bottom:1px solid var(--linha);white-space:nowrap}
+.voos td{padding:0.4118rem 0.4706rem;border-bottom:1px solid #EEF2F6;vertical-align:top}
+.voos td.num{white-space:nowrap;font-variant-numeric:tabular-nums}
+.voos tr.melhor td{background:#F1F8F4}
+.voos tr.melhor td:first-child{font-weight:700}
+.voos tr.alvo td.preco{color:var(--ok);font-weight:700}
+.voos .semvoo{color:var(--suave)}
+.voos a{color:var(--navy);font-weight:700;white-space:nowrap}
+.data input.texto{flex:1;min-width:0}
+.data input.texto.invalido{border-color:var(--erro);outline-color:var(--erro)}
+.data input.nativo{position:absolute;left:0;bottom:0;width:1px;height:1px;min-height:0;padding:0;border:0;opacity:0;pointer-events:none}
+.data button.cal{flex:none;width:2.5882rem;padding:0;display:flex;align-items:center;justify-content:center;background:#E4ECF4;color:var(--navy)}
+.data button.cal svg{width:1.1765rem;height:1.1765rem}
 .vazio{color:var(--suave);padding:1.0588rem;background:#fff;border:1px dashed var(--linha);border-radius:0.5882rem}
 footer{padding:0 1.1765rem 1.7647rem;color:var(--suave);font-size:0.8235rem}
-@media (max-width:36.4706rem){.ficha{grid-template-columns:1fr}.ficha .canhoto{border-left:0;border-top:2px dashed var(--linha);flex-direction:row;flex-wrap:wrap}.ficha .canhoto::before,.ficha .canhoto::after{display:none}}
+@media (max-width:620px) and (hover:none),(max-width:620px) and (pointer:coarse){.lado{align-items:flex-start}.bilhete{grid-template-columns:1fr}.bilhete .canhoto{border-left:0;border-top:2px dashed var(--linha);flex-direction:row;flex-wrap:wrap}.bilhete .canhoto::before,.bilhete .canhoto::after{display:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
-/* tela grande (mouse/trackpad): tudo acompanha a largura da janela; texto principal nunca abaixo de 10px, depois disso rolagem */
-@media (hover:hover) and (pointer:fine){
- html{font-size:max(10px,1.415vw)}
- body{min-width:707px}
-}
+
+.topo-dir{display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;justify-content:flex-end}
+.btn-topo{font:inherit;font-size:0.85rem;font-weight:700;color:#fff;background:transparent;border:1px solid #6F86A0;border-radius:0.6rem;padding:0.4rem 0.75rem;cursor:pointer;min-height:2.2rem}
+.btn-topo:hover{background:#ffffff1f;border-color:#C3D0DD}
+header .lado{margin-left:auto}
+header .lado .selo{align-self:flex-end;text-align:right}
+@media (max-width:620px){.lado{width:100%}.topo-dir{justify-content:flex-start}}
 </style>
 </head>
 <body>
 <header><div class="wrap">
-  <div><h1>Gerenciador de Casas</h1><p>Buscas semanais na Flórida, com relatório por e-mail aos sábados.</p></div>
+  <div><h1>Gerenciador de Viagens</h1><p>Passagens monitoradas pelo robô, saindo de casa.</p></div>
   <div class="lado">
+  <div class="topo-dir"><button class="btn-topo" id="btnAtualizar">Atualizar dados</button><button class="btn-topo" id="btnEsquecer">Desconectar este navegador</button></div>
   <div class="cota" id="cota"><div class="num">Cota do mês: carregando…</div><div class="barra"><i id="barraCota"></i></div></div>
-    <div class="stamp" aria-label="Versão da página">v1.3 · 28-set-26<br>7:37 pm</div>
+  <div class="selo" aria-label="Versão do Gerenciador">v1.5 · 20-out-26<br>6:35 pm</div>
   </div>
 </div></header>
 <main class="wrap">
@@ -94,7 +121,7 @@ footer{padding:0 1.1765rem 1.7647rem;color:var(--suave);font-size:0.8235rem}
 <section id="secToken" hidden>
   <h2>Conectar ao robô</h2>
   <div class="painel">
-    <p>Cole o token de acesso do GitHub. Ele fica guardado só neste navegador e dá acesso apenas ao repositório <b>Casas-FL-bot</b>.</p>
+    <p>Cole o token de acesso do GitHub. Ele fica guardado só neste navegador e dá acesso apenas ao repositório <b>bot-viagens</b>.</p>
     <label for="token">Token de acesso</label>
     <input id="token" type="password" autocomplete="off" placeholder="github_pat_...">
     <div class="acoes"><button class="principal" id="btnToken">Conectar</button></div>
@@ -103,89 +130,56 @@ footer{padding:0 1.1765rem 1.7647rem;color:var(--suave);font-size:0.8235rem}
 </section>
 
 <section id="secNova" hidden>
-  <h2>Nova busca</h2>
+  <h2>Nova viagem</h2>
   <form id="form" novalidate>
-    <p class="lembrete">Campos em branco não filtram nada. Valores em dólares e pés quadrados (sq ft). Sempre no estado da Flórida (FL).</p>
-
-    <h3>Onde</h3>
+    <p class="lembrete">O nome da viagem é montado com o passageiro e o destino, mais o mês e ano da ida (ex.: LISA-GRU-DEZ26). Use o nome principal da viagem no campo Passageiro.</p>
     <div class="grade">
-      <div><label for="local">Cidade ou região</label><input id="local" required placeholder="Orlando"></div>
-      <div><label for="modo">Modo de busca</label>
-        <select id="modo">
-          <option value="cidade">Pela cidade</option>
-          <option value="zip">Por ZIP codes</option>
-          <option value="raio">Por raio a partir de um endereço</option>
+      <div><label for="pass">Passageiro</label><input id="pass" required placeholder="Lisa" autocapitalize="characters"></div>
+      <div><label for="origem">Origem</label><input id="origem" value="XNA" maxlength="3" autocapitalize="characters"></div>
+      <div><label for="destino">Destino (aeroporto)</label><input id="destino" maxlength="3" placeholder="GRU" autocapitalize="characters"></div>
+      <div><label for="ida">Ida</label><input id="ida" type="date"></div>
+      <div><label for="volta">Volta</label><input id="volta" type="date"></div>
+      <div><label for="flex">Flexibilidade</label>
+        <select id="flex">
+          <option value="0,0">Datas fixas</option>
+          <option value="1,0">Ida ±1 dia</option>
+          <option value="2,0">Ida ±2 dias</option>
+          <option value="0,1">Volta ±1 dia</option>
+          <option value="0,2">Volta ±2 dias</option>
+          <option value="cruz">Cruz: ida ou volta ±1 dia</option>
+          <option value="1,1">Grade: ida e volta ±1 dia</option>
         </select></div>
-      <div id="wZips" hidden><label for="zips">ZIP codes</label><input id="zips" placeholder="32801; 32803" inputmode="numeric">
-        <div class="dica">Separe por ponto e vírgula.</div></div>
-      <div id="wCentro" hidden><label for="centro">Endereço central</label><input id="centro" placeholder="100 E Pine St, Orlando, FL 32801"></div>
-      <div id="wRaio" hidden><label for="raio">Raio (milhas)</label><input id="raio" type="number" min="1" max="100" inputmode="numeric" placeholder="até 100"></div>
+      <div><label for="adultos">Adultos</label><input id="adultos" type="number" min="1" max="9" value="1" inputmode="numeric"></div>
+      <div><label for="criancas">Crianças</label><input id="criancas" type="number" min="0" max="9" value="0" inputmode="numeric"></div>
+      <div><label for="target">Preço-alvo em US$</label><input id="target" type="number" min="1" inputmode="numeric" placeholder="em branco = aguardar faixa típica">
+        <div class="dica">Sem valor, o robô faz uma consulta e envia a faixa típica.</div></div>
+      <div><label for="duracao">Duração máxima por trecho (horas)</label><input id="duracao" type="number" min="1" step="0.5" inputmode="decimal" placeholder="em branco = sem limite">
+        <div class="dica">Voo mais conexões, valendo para a ida e para a volta.</div></div>
     </div>
-
-    <h3>Finalidade</h3>
-    <div class="opcoes" role="radiogroup" aria-label="Finalidade">
-      <label><input type="radio" name="fin" id="finCompra" value="compra" checked>Compra</label>
-      <label><input type="radio" name="fin" id="finAluguel" value="aluguel">Aluguel</label>
-    </div>
-
-    <h3>Tipo de imóvel</h3>
-    <div class="opcoes" id="tipos">
-      <label><input type="checkbox" id="tSF" value="Single Family" checked>Casa (Single Family)</label>
-      <label><input type="checkbox" id="tCO" value="Condo">Condo</label>
-      <label><input type="checkbox" id="tTH" value="Townhouse">Townhouse</label>
-      <label><input type="checkbox" id="tMA" value="Manufactured">Manufactured</label>
-      <label><input type="checkbox" id="tMU" value="Multi-Family">Multi-Family</label>
-      <label><input type="checkbox" id="tAP" value="Apartment">Apartamento</label>
-    </div>
-
-    <h3>Características</h3>
-    <div class="grade">
-      <div><label for="pmin" id="lPmin">Preço mínimo (US$)</label><input id="pmin" type="number" min="0" step="1000" inputmode="numeric"></div>
-      <div><label for="pmax" id="lPmax">Preço máximo (US$)</label><input id="pmax" type="number" min="0" step="1000" inputmode="numeric"></div>
-      <div><label for="quartos">Quartos (mínimo)</label><input id="quartos" type="number" min="0" max="10" inputmode="numeric"></div>
-      <div><label for="banheiros">Banheiros (mínimo)</label><input id="banheiros" type="number" min="0" max="10" step="0.5" inputmode="decimal"></div>
-      <div><label for="amin">Área mínima (sq ft)</label><input id="amin" type="number" min="0" step="50" inputmode="numeric"></div>
-      <div><label for="amax">Área máxima (sq ft)</label><input id="amax" type="number" min="0" step="50" inputmode="numeric"></div>
-      <div><label for="lote">Terreno mínimo (sq ft)</label><input id="lote" type="number" min="0" step="500" inputmode="numeric"></div>
-      <div><label for="ano">Construída a partir de (ano)</label><input id="ano" type="number" min="1900" max="2030" inputmode="numeric"></div>
-      <div><label for="hoa">HOA máximo (US$/mês)</label><input id="hoa" type="number" min="0" step="10" inputmode="numeric"></div>
-      <div><label for="dias">Anunciada há no máximo (dias)</label><input id="dias" type="number" min="1" inputmode="numeric"></div>
-    </div>
-
-    <h3>Tipo de anúncio</h3>
-    <div class="opcoes" id="anuncios">
-      <label><input type="checkbox" id="aSTD" value="Standard" checked>Normal</label>
-      <label><input type="checkbox" id="aNEW" value="New Construction" checked>Construção nova</label>
-      <label><input type="checkbox" id="aFOR" value="Foreclosure">Foreclosure</label>
-      <label><input type="checkbox" id="aSS" value="Short Sale">Short sale</label>
-    </div>
-
-    <h3>Observações</h3>
-    <textarea id="obs" aria-label="Observações" placeholder="Anotação para você mesmo (não filtra a busca)"></textarea>
-
-    <div class="previa" id="previa">Preencha a cidade ou região para ver o resumo.</div>
-    <div class="acoes"><button class="principal" id="btnSalvar" type="submit" disabled>Salvar busca</button><button class="secundario" type="reset">Limpar</button></div>
+    <div class="previa" id="previa">Preencha passageiro, destino e datas para ver o resumo.</div>
+    <div class="acoes"><button class="principal" id="btnSalvar" type="submit" disabled>Salvar viagem</button><button class="secundario" type="reset">Limpar</button></div>
     <div id="msg"></div>
   </form>
 </section>
 
 <section id="secLista" hidden>
-  <h2>Buscas ativas</h2>
+  <h2>Viagens monitoradas</h2>
   <div id="lista"></div>
 </section>
 </main>
-<footer class="wrap"><button class="secundario" id="btnAtualizar">Atualizar dados</button> <button class="secundario" id="btnEsquecer">Desconectar este navegador</button></footer>
 
 <script>
-const REPO = "d6t29ggrmy-del/Casas-FL-bot", RAMO = "main", ARQ = "buscas.csv";
-const COTA = 50, REQ_POR_BUSCA_MES = 5;
-const CAMPOS = ["id","local","modo","zips","centro","raio","finalidade","tipos","preco_min","preco_max","quartos_min","banheiros_min","area_min","area_max","terreno_min","ano_min","hoa_max","dias_max","anuncios","obs","status","criada_em"];
+const REPO = "d6t29ggrmy-del/bot-viagens", RAMO = "main";
+const COTA = 250, POR_COMB_MES = 43, PARADA_DIAS = 30;
+const CAMPOS = ["id","origem","destino","ida","volta","flex_ida","flex_volta","adultos","criancas","target","status","parar_em","duracao_max"];
+const MESES = ["JAN","FEV","MAR","ABR","MAI","JUN","JUL","AGO","SET","OUT","NOV","DEZ"];
 const $ = s => document.querySelector(s);
-let buscas = [], shaCsv = null, estado = {};
+let viagens = [], shaCsv = null, estado = {}, alertas = {}, historico = [];
+const voosAbertos = new Set();
 
 // ---------- armazenamento local do token ----------
-const tokenGet = () => { try { return localStorage.getItem("gc_token") || ""; } catch(e) { return ""; } };
-const tokenSet = t => { try { t ? localStorage.setItem("gc_token", t) : localStorage.removeItem("gc_token"); } catch(e) {} };
+const tokenGet = () => { try { return localStorage.getItem("gv_token") || ""; } catch(e) { return ""; } };
+const tokenSet = t => { try { t ? localStorage.setItem("gv_token", t) : localStorage.removeItem("gv_token"); } catch(e) {} };
 
 // ---------- GitHub ----------
 function b64decode(s){ const bin = atob(s.replace(/\n/g,"")); return new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0))); }
@@ -207,149 +201,305 @@ async function lerJson(caminho){ try { return JSON.parse((await lerArquivo(camin
 // ---------- CSV ----------
 function parseCsv(txt){
   const linhas = txt.split(/\r?\n/).filter(l => l.trim());
-  if (!linhas.length) return [];
   const cab = linhas.shift().split(",").map(s => s.trim());
   return linhas.map(l => { const v = l.split(","); const o = {}; cab.forEach((c,i) => o[c] = (v[i] || "").trim()); return o; });
 }
-const limpa = v => String(v ?? "").replace(/[,\r\n]+/g, " ").trim();
-const montarCsv = lista => CAMPOS.join(",") + "\n" + lista.map(b => CAMPOS.map(c => limpa(b[c])).join(",")).join("\n") + (lista.length ? "\n" : "");
+function linhaCsv(l){
+  const out = []; let cur = "", q = false;
+  for (let i = 0; i < l.length; i++) {
+    const c = l[i];
+    if (q) { if (c === '"' && l[i+1] === '"') { cur += '"'; i++; } else if (c === '"') q = false; else cur += c; }
+    else if (c === '"') q = true; else if (c === ",") { out.push(cur); cur = ""; } else cur += c;
+  }
+  out.push(cur); return out;
+}
+function parseCsvAspas(txt){
+  const linhas = txt.split(/\r?\n/).filter(l => l.trim());
+  if (!linhas.length) return [];
+  const cab = linhaCsv(linhas.shift()).map(x => x.trim());
+  return linhas.map(l => { const v = linhaCsv(l), o = {}; cab.forEach((c,i) => o[c] = (v[i] || "").trim()); return o; });
+}
+const montarCsv = lista => CAMPOS.join(",") + "\n" + lista.map(v => CAMPOS.map(c => v[c] ?? "").join(",")).join("\n") + "\n";
+
 async function gravarCsv(novaLista, mensagem){
-  const corpo = { message: "Gerenciador: " + mensagem, content: b64encode(montarCsv(novaLista)), branch: RAMO };
-  if (shaCsv) corpo.sha = shaCsv;
-  await gh(ARQ, { method: "PUT", body: JSON.stringify(corpo) });
+  await gh("viagens.csv", { method: "PUT", body: JSON.stringify({ message: "Gerenciador: " + mensagem, content: b64encode(montarCsv(novaLista)), sha: shaCsv, branch: RAMO }) });
 }
 
-// ---------- utilidades ----------
+// ---------- datas ----------
 const hojeChicago = () => new Intl.DateTimeFormat("en-CA", { timeZone: "America/Chicago" }).format(new Date());
-const brAno = iso => iso ? iso.slice(8,10) + "/" + iso.slice(5,7) + "/" + iso.slice(0,4) : "—";
-const usd = v => "US$ " + Math.round(+v).toLocaleString("pt-BR");
-const slug = t => t.normalize("NFD").replace(/[̀-ͯ]/g,"").toUpperCase().replace(/[^A-Z0-9]+/g,"-").replace(/^-|-$/g,"");
-const lista = s => (s || "").split(";").map(x => x.trim()).filter(Boolean);
-const val = id => $("#" + id).value.trim();
-const marcados = box => [...document.querySelectorAll("#" + box + " input:checked")].map(i => i.value);
-const ativas = () => buscas.filter(b => b.status === "ativa");
-const consumoMes = n => n * REQ_POR_BUSCA_MES;
-const TIPO_PT = { "Single Family": "Casa", "Condo": "Condo", "Townhouse": "Townhouse", "Manufactured": "Manufactured", "Multi-Family": "Multi-Family", "Apartment": "Apartamento" };
-const ANUNCIO_PT = { "Standard": "Normal", "New Construction": "Construção nova", "Foreclosure": "Foreclosure", "Short Sale": "Short sale" };
+function somaDias(iso, n){ const d = new Date(iso + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0,10); }
+const br = iso => iso ? iso.slice(8,10) + "/" + iso.slice(5,7) : "—";
+const brAno = iso => iso ? br(iso) + "/" + iso.slice(2,4) : "—";
+const limiteTxt = h => { if (!h) return "sem limite"; const n = +h, hh = Math.floor(n), mm = Math.round((n - hh) * 60); return "até " + hh + "h" + (mm ? String(mm).padStart(2, "0") : "") + " por trecho"; };
+const usd = v => "US$ " + Math.round(v).toLocaleString("pt-BR");
 
-// ---------- montagem da nova busca ----------
-function sincronizarModo(){ const m = $("#modo").value; $("#wZips").hidden = m !== "zip"; $("#wCentro").hidden = m !== "raio"; $("#wRaio").hidden = m !== "raio"; }
-function sincronizarFinalidade(){
-  const alug = $("#finAluguel").checked;
-  $("#lPmin").textContent = alug ? "Aluguel mínimo (US$/mês)" : "Preço mínimo (US$)";
-  $("#lPmax").textContent = alug ? "Aluguel máximo (US$/mês)" : "Preço máximo (US$)";
+// ---------- campo de data em dd/mm/aa ----------
+const ICONE_CAL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>';
+const isoParaTexto = iso => /^\d{4}-\d{2}-\d{2}$/.test(iso || "") ? iso.slice(8,10) + "/" + iso.slice(5,7) + "/" + iso.slice(2,4) : "";
+function textoParaIso(t){
+  const m = /^(\d{2})\/(\d{2})\/(\d{2})$/.exec(t); if (!m) return "";
+  const iso = "20" + m[3] + "-" + m[2] + "-" + m[1], d = new Date(iso + "T12:00:00Z");
+  return (!isNaN(d) && d.toISOString().slice(0,10) === iso) ? iso : "";
 }
-function montarBusca(){
-  const fin = $("#finAluguel").checked ? "aluguel" : "compra";
-  const b = { local: val("local"), modo: $("#modo").value, finalidade: fin,
-    zips: $("#modo").value === "zip" ? lista(val("zips").replace(/,/g, ";")).join(";") : "",
-    centro: $("#modo").value === "raio" ? val("centro") : "", raio: $("#modo").value === "raio" ? val("raio") : "",
-    tipos: marcados("tipos").join(";"), preco_min: val("pmin"), preco_max: val("pmax"), quartos_min: val("quartos"), banheiros_min: val("banheiros"),
-    area_min: val("amin"), area_max: val("amax"), terreno_min: val("lote"), ano_min: val("ano"), hoa_max: val("hoa"), dias_max: val("dias"),
-    anuncios: marcados("anuncios").join(";"), obs: val("obs"), status: "ativa", criada_em: hojeChicago() };
+function prepararData(nativo){
+  if (nativo._texto) return;
+  const caixa = document.createElement("div"); caixa.className = "data";
+  const texto = document.createElement("input");
+  Object.assign(texto, { type: "text", className: "texto", placeholder: "dd/mm/aa", inputMode: "numeric", autocomplete: "off", maxLength: 8 });
+  if (nativo.id) { texto.id = nativo.id + "Texto"; const l = document.querySelector('label[for="' + nativo.id + '"]'); if (l) l.htmlFor = texto.id; }
+  const botao = document.createElement("button");
+  Object.assign(botao, { type: "button", className: "cal", innerHTML: ICONE_CAL }); botao.setAttribute("aria-label", "Abrir calendário");
+  nativo.parentNode.insertBefore(caixa, nativo); caixa.append(texto, botao, nativo);
+  nativo.classList.add("nativo"); nativo.tabIndex = -1; nativo.setAttribute("aria-hidden", "true");
+  let interno = false;
+  const avisar = () => { interno = true; nativo.dispatchEvent(new Event("input", { bubbles: true })); nativo.dispatchEvent(new Event("change", { bubbles: true })); interno = false; };
+  texto.addEventListener("input", () => {
+    let dg = texto.value.replace(/\D/g, "").slice(0, 6);
+    texto.value = dg.length > 4 ? dg.slice(0,2) + "/" + dg.slice(2,4) + "/" + dg.slice(4) : dg.length > 2 ? dg.slice(0,2) + "/" + dg.slice(2) : dg;
+    const iso = textoParaIso(texto.value);
+    texto.classList.toggle("invalido", texto.value.length === 8 && !iso);
+    if (nativo.value !== iso) { nativo.value = iso; avisar(); }
+  });
+  nativo.addEventListener("change", () => { if (!interno) { texto.value = isoParaTexto(nativo.value); texto.classList.remove("invalido"); avisar(); } });
+  botao.addEventListener("click", () => {
+    nativo.value = textoParaIso(texto.value) || nativo.value;
+    try { nativo.showPicker(); } catch(e) { nativo.focus(); nativo.click(); }
+  });
+  nativo._texto = texto;
+  nativo._sync = () => { texto.value = isoParaTexto(nativo.value); texto.classList.remove("invalido"); };
+}
+
+// ---------- grupos (mesma regra do robô) ----------
+function grupoDe(id, ids){ const pais = ids.filter(x => x !== id && id.startsWith(x + "-")); return pais.length ? pais.sort((a,b) => b.length - a.length)[0] : id; }
+function agrupar(lista){
+  const ids = lista.map(v => v.id), g = {};
+  lista.forEach(v => (g[grupoDe(v.id, ids)] ||= []).push(v));
+  return g;
+}
+const chaveDatas = v => v.ida + "|" + v.volta + "|" + (v.flex_ida || "0") + "|" + (v.flex_volta || "0");
+const dadosViagem = v => { const a = alertas[v.id] || {}; return (!a.chave || a.chave === chaveDatas(v)) ? a : {}; };
+const comb = v => (2 * (+v.flex_ida || 0) + 1) * (2 * (+v.flex_volta || 0) + 1);
+const consumoMes = lista => lista.filter(v => v.status === "ativa").reduce((s,v) => s + comb(v) * POR_COMB_MES, 0);
+
+// ---------- montagem da nova viagem ----------
+function limpaNome(t){ return t.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toUpperCase().replace(/[^A-Z0-9]+/g,"-").replace(/^-|-$/g,""); }
+function montarLinhas(){
+  const f = { pass: limpaNome($("#pass").value), origem: $("#origem").value.trim().toUpperCase(), destino: $("#destino").value.trim().toUpperCase(),
+              ida: $("#ida").value, volta: $("#volta").value, flex: $("#flex").value, adultos: $("#adultos").value || "1",
+              criancas: $("#criancas").value || "0", target: $("#target").value.trim(), dur: $("#duracao").value.trim() };
   const erros = [];
-  if (!b.local) erros.push("Informe a cidade ou região.");
-  if (b.modo === "zip" && (!b.zips || !lista(b.zips).every(z => /^\d{5}$/.test(z)))) erros.push("Cada ZIP code deve ter 5 dígitos.");
-  if (b.modo === "raio" && (!b.centro || !b.raio)) erros.push("Informe o endereço central e o raio.");
-  if (b.raio && (+b.raio < 1 || +b.raio > 100)) erros.push("O raio deve ficar entre 1 e 100 milhas.");
-  if (!b.tipos) erros.push("Marque pelo menos um tipo de imóvel.");
-  if (!b.anuncios) erros.push("Marque pelo menos um tipo de anúncio.");
-  if (b.preco_min && b.preco_max && +b.preco_min > +b.preco_max) erros.push("O preço mínimo está maior que o máximo.");
-  if (b.area_min && b.area_max && +b.area_min > +b.area_max) erros.push("A área mínima está maior que a máxima.");
-  b.id = slug(b.local) + "-" + (fin === "compra" ? "COMPRA" : "ALUGUEL");
-  if (buscas.some(x => x.id === b.id && x.status === "ativa")) erros.push("Já existe uma busca ativa com o nome " + b.id + ".");
-  return { b, erros };
+  if (!f.pass) erros.push("Informe o passageiro.");
+  if (!/^[A-Z]{3}$/.test(f.origem)) erros.push("A origem deve ter 3 letras (ex.: XNA).");
+  if (!/^[A-Z]{3}$/.test(f.destino)) erros.push("O destino deve ter 3 letras (ex.: GRU).");
+  if (!f.ida || !f.volta) erros.push("Informe as datas de ida e volta.");
+  else if (f.volta <= f.ida) erros.push("A volta precisa ser depois da ida.");
+  if (f.dur && !(+f.dur >= 1)) erros.push("A duração máxima deve ser de pelo menos 1 hora.");
+  if (erros.length) return { erros };
+  const idBase = f.pass + "-" + f.destino + "-" + MESES[+f.ida.slice(5,7) - 1] + f.ida.slice(2,4);
+  const parar = somaDias(f.ida, -PARADA_DIAS);
+  const status = f.target ? "ativa" : "aguardando_target";
+  const base = { origem: f.origem, destino: f.destino, adultos: f.adultos, criancas: f.criancas, target: f.target, status, parar_em: parar, duracao_max: f.dur ? String(+f.dur) : "" };
+  let linhas;
+  if (f.flex === "cruz") {
+    const v1 = somaDias(f.volta, -1), v2 = somaDias(f.volta, 1);
+    linhas = [ { ...base, id: idBase, ida: f.ida, volta: f.volta, flex_ida: "1", flex_volta: "0" },
+               { ...base, id: idBase + "-V" + v1.slice(8,10), ida: f.ida, volta: v1, flex_ida: "0", flex_volta: "0" },
+               { ...base, id: idBase + "-V" + v2.slice(8,10), ida: f.ida, volta: v2, flex_ida: "0", flex_volta: "0" } ];
+  } else {
+    const [fi, fv] = f.flex.split(",");
+    linhas = [ { ...base, id: idBase, ida: f.ida, volta: f.volta, flex_ida: fi, flex_volta: fv } ];
+  }
+  const avisos = [];
+  if (parar <= hojeChicago()) erros.push("A ida é daqui a menos de 30 dias: o robô encerraria a busca na primeira consulta.");
+  const existentes = viagens.map(v => v.id);
+  const repetidos = linhas.filter(l => existentes.includes(l.id)).map(l => l.id);
+  if (repetidos.length) erros.push("Já existe uma viagem com o nome " + repetidos.join(", ") + ".");
+  return { linhas, erros, avisos, idBase, parar, status };
 }
-function faixa(min, max, fmt){ if (!min && !max) return ""; return (min ? fmt(min) : "—") + " a " + (max ? fmt(max) : "—"); }
-function descrever(b){
-  const aluguel = b.finalidade === "aluguel";
-  const partes = [];
-  const onde = b.modo === "zip" ? "ZIP " + lista(b.zips).join(", ") : b.modo === "raio" ? b.raio + " mi de " + b.centro : "cidade inteira";
-  partes.push(onde);
-  partes.push(lista(b.tipos).map(t => TIPO_PT[t] || t).join(", "));
-  const p = faixa(b.preco_min, b.preco_max, v => usd(v) + (aluguel ? "/mês" : "")); if (p) partes.push(p);
-  if (b.quartos_min) partes.push(b.quartos_min + "+ quartos"); if (b.banheiros_min) partes.push(b.banheiros_min + "+ banheiros");
-  const a = faixa(b.area_min, b.area_max, v => (+v).toLocaleString("pt-BR") + " sq ft"); if (a) partes.push(a);
-  if (b.terreno_min) partes.push("terreno " + (+b.terreno_min).toLocaleString("pt-BR") + "+ sq ft");
-  if (b.ano_min) partes.push("a partir de " + b.ano_min);
-  if (b.hoa_max) partes.push("HOA até " + usd(b.hoa_max) + "/mês");
-  if (b.dias_max) partes.push("anunciada há até " + b.dias_max + " dias");
-  partes.push("anúncios: " + lista(b.anuncios).map(t => ANUNCIO_PT[t] || t).join(", "));
-  return partes.join(" | ");
-}
+
 function atualizarPrevia(){
-  const { b, erros } = montarBusca(), p = $("#previa");
-  $("#btnSalvar").disabled = !!erros.length;
-  if (!b.local) { p.textContent = "Preencha a cidade ou região para ver o resumo."; return; }
-  const total = consumoMes(ativas().length + 1);
-  let cota = "Consumo previsto com as buscas ativas: ~" + total + " de " + COTA + " requisições/mês.";
-  if (total > COTA) cota += '<br><span class="erro">Passa da cota gratuita. O robô pausaria as buscas antes do fim do mês. Encerre outra busca antes.</span>';
-  else if (total >= COTA * .8) cota += '<br><span class="aviso">Passa de 80% da cota gratuita.</span>';
-  p.innerHTML = "Nome: <code>" + b.id + "</code><br>" + descrever(b).replace(/&/g,"&amp;").replace(/</g,"&lt;") + "<br>" + cota +
-    (erros.length ? '<br><span class="erro">' + erros.join(" ") + "</span>" : "");
+  const r = montarLinhas(), p = $("#previa");
+  $("#btnSalvar").disabled = !!r.erros.length || !r.linhas;
+  if (!r.linhas) { p.innerHTML = r.erros.length && ($("#pass").value || $("#destino").value || $("#ida").value) ? '<span class="erro">' + r.erros[0] + '</span>' : "Preencha passageiro, destino e datas para ver o resumo."; return; }
+  const combos = r.linhas.reduce((s,l) => s + comb(l), 0);
+  const atual = consumoMes(viagens);
+  const novo = r.status === "ativa" ? combos * POR_COMB_MES : 0;
+  const total = atual + novo;
+  let cotaTxt;
+  if (r.status !== "ativa") cotaTxt = "Aguardando target: uma única consulta de " + combos + " busca" + (combos > 1 ? "s" : "") + " para trazer a faixa típica.";
+  else cotaTxt = "Consumo desta viagem: cerca de " + novo + " buscas/mês. Com as viagens ativas: " + total + " de " + COTA + ".";
+  let alerta = "";
+  if (r.status === "ativa" && total > COTA) alerta = '<br><span class="erro">Ultrapassa a cota mensal. O robô pausaria as consultas antes do fim do mês. Reduza a flexibilidade ou encerre outra viagem.</span>';
+  else if (r.status === "ativa" && total >= COTA * 0.8) alerta = '<br><span class="aviso">Passa de 80% da cota: você receberá o aviso de cota.</span>';
+  p.innerHTML = "Nome: " + r.linhas.map(l => "<code>" + l.id + "</code>").join(", ") +
+    "<br>" + combos + (combos > 1 ? " combinações" : " combinação") + " de datas. Parada automática em " + brAno(r.parar) + "." +
+    "<br>Duração: " + limiteTxt(r.linhas[0].duracao_max) + "." +
+    "<br>" + cotaTxt + alerta + (r.erros.length ? '<br><span class="erro">' + r.erros.join(" ") + '</span>' : "");
+}
+
+// ---------- voos encontrados ----------
+function combinacoesDe(v){
+  const fi = +v.flex_ida || 0, fv = +v.flex_volta || 0, r = [];
+  for (let i = -fi; i <= fi; i++) for (let j = -fv; j <= fv; j++) {
+    const a = somaDias(v.ida, i), b = somaDias(v.volta, j);
+    if (b > a) r.push({ id: v.id, ida: a, volta: b, linha: v });
+  }
+  return r;
+}
+const horasTxt = min => { if (!min) return ""; const h = Math.floor(min / 60), m = min % 60; return h + "h" + (m ? String(m).padStart(2, "0") : ""); };
+const escalasTxt = n => { n = +n || 0; return n === 0 ? "direto" : n + (n === 1 ? " escala" : " escalas"); };
+const buscaGoogle = (o, de, ida, volta) => "https://www.google.com/travel/flights?hl=pt-BR&curr=USD&q=" +
+  encodeURIComponent("Flights from " + o + " to " + de + " on " + ida + " through " + volta);
+const dataHoraTxt = dh => dh ? dh.slice(8,10) + "/" + dh.slice(5,7) + "/" + dh.slice(2,4) + " às " + dh.slice(11,16) : "";
+function tabelaVoos(membros){
+  const combos = membros.flatMap(combinacoesDe).sort((x, y) => (x.ida + x.volta).localeCompare(y.ida + y.volta));
+  const ultimaPorId = {};
+  historico.forEach(h => { if (!ultimaPorId[h.id] || h.data_hora > ultimaPorId[h.id]) ultimaPorId[h.id] = h.data_hora; });
+  const linhas = combos.map(c => {
+    const hs = historico.filter(h => h.id === c.id && h.ida === c.ida && h.volta === c.volta);
+    const ult = hs.reduce((m, h) => (!m || h.data_hora > m.data_hora) ? h : m, null);
+    const atual = ult && ult.data_hora === ultimaPorId[c.id] ? ult : null;
+    const menor = hs.length ? Math.min(...hs.map(h => +h.preco)) : null;
+    const a = dadosViagem(c.linha), mesmo = a.ultimo_ida === c.ida && a.ultimo_volta === c.volta;
+    return { ...c, atual, menor, dur: mesmo ? a.ultimo_duracao : null,
+             link: (mesmo && a.ultimo_link) || buscaGoogle(c.linha.origem, c.linha.destino, c.ida, c.volta) };
+  });
+  const comPreco = linhas.filter(l => l.atual);
+  const melhor = comPreco.length ? Math.min(...comPreco.map(l => +l.atual.preco)) : null;
+  const ult = Object.entries(ultimaPorId).filter(([id]) => membros.some(m => m.id === id)).map(([, dh]) => dh).sort().pop();
+  const alvo = +(membros[0].target || 0);
+  const algumAlvo = alvo && comPreco.some(l => +l.atual.preco <= alvo);
+  let html = '<div class="quando">' + (ult ? "Última consulta: " + dataHoraTxt(ult) : "Ainda não há consultas registradas para estas datas.") +
+    (algumAlvo ? " | Em verde: preço no target ou abaixo." : "") + "</div>" +
+    '<div class="rolar"><table><thead><tr><th>Datas</th><th>Preço atual</th><th>Menor visto</th><th>Voo</th><th></th></tr></thead><tbody>';
+  linhas.forEach(l => {
+    const p = l.atual ? +l.atual.preco : null;
+    const cls = [p !== null && p === melhor ? "melhor" : "", p !== null && alvo && p <= alvo ? "alvo" : ""].join(" ").trim();
+    const voo = l.atual ? [l.atual.companhia, escalasTxt(l.atual.escalas), l.dur ? "ida em " + horasTxt(l.dur) : ""].filter(Boolean).join(" | ") : '<span class="semvoo">sem voo na última consulta</span>';
+    html += '<tr class="' + cls + '"><td class="num">' + (p !== null && p === melhor ? "🏆 " : "") + br(l.ida) + " a " + br(l.volta) + "</td>" +
+      '<td class="num preco">' + (p !== null ? usd(p) : "—") + '</td><td class="num">' + (l.menor !== null ? usd(l.menor) : "—") + "</td>" +
+      "<td>" + voo + '</td><td><a href="' + l.link + '" target="_blank" rel="noopener">Abrir ↗</a></td></tr>';
+  });
+  return html + "</tbody></table></div>";
 }
 
 // ---------- lista ----------
 function desenharLista(){
-  const abertas = ativas(), L = $("#lista");
-  if (!abertas.length) { L.innerHTML = '<div class="vazio">Nenhuma busca ativa. Preencha o formulário acima para cadastrar a primeira.</div>'; return; }
+  const abertas = viagens.filter(v => v.status !== "encerrada");
+  const L = $("#lista");
+  if (!abertas.length) { L.innerHTML = '<div class="vazio">Nenhuma viagem monitorada. Preencha o formulário acima para cadastrar a primeira.</div>'; return; }
+  const grupos = agrupar(abertas);
   L.innerHTML = "";
-  abertas.forEach(b => {
-    const aluguel = b.finalidade === "aluguel";
-    const el = document.createElement("div"); el.className = "ficha";
-    const corpo = document.createElement("div"); corpo.className = "corpo";
-    const titulo = document.createElement("div"); titulo.className = "local"; titulo.textContent = b.local + ", FL";
-    const sm = document.createElement("small"); sm.textContent = b.id; titulo.appendChild(sm);
-    const meta = document.createElement("div"); meta.className = "meta"; meta.textContent = descrever(b);
-    const precos = document.createElement("div"); precos.className = "precos";
-    precos.innerHTML = (aluguel ? "Aluguel máximo: <b>" : "Preço máximo: <b>") + (b.preco_max ? usd(b.preco_max) + (aluguel ? "/mês" : "") : "sem limite") + "</b>";
-    const meta2 = document.createElement("div"); meta2.className = "meta"; meta2.textContent = "Cadastrada em " + brAno(b.criada_em) + (b.obs ? " | " + b.obs : "");
-    const ed = document.createElement("div"); ed.className = "editar";
-    ed.innerHTML = '<input type="number" min="0" step="1000" inputmode="numeric" placeholder="US$ (vazio = sem limite)" aria-label="Novo preço máximo"><button class="principal">Salvar</button><button class="secundario">Cancelar</button>';
-    corpo.append(titulo, meta, precos, meta2, ed);
-    const canhoto = document.createElement("div"); canhoto.className = "canhoto";
-    canhoto.innerHTML = '<span class="estado' + (aluguel ? " aluguel" : "") + '">' + (aluguel ? "Aluguel" : "Compra") + '</span>' +
-      '<button class="secundario" data-a="preco">Alterar preço máximo</button><button class="perigo" data-a="encerrar">Encerrar</button>';
-    el.append(corpo, canhoto);
-    const inp = ed.querySelector("input");
-    canhoto.querySelector('[data-a="preco"]').onclick = () => { ed.classList.add("aberto"); inp.value = b.preco_max || ""; inp.focus(); };
+  Object.entries(grupos).forEach(([gid, membros]) => {
+    const b = membros.find(m => m.id === gid) || membros[0];
+    const combos = membros.reduce((s,m) => s + comb(m), 0);
+    const aguard = membros.some(m => m.status === "aguardando_target");
+    const precos = membros.map(m => dadosViagem(m).ultimo_preco).filter(Boolean);
+    const melhor = precos.length ? Math.min(...precos) : null;
+    const el = document.createElement("div"); el.className = "bilhete";
+    el.innerHTML = '<div class="corpo"><div class="rota">' + b.origem + " → " + b.destino + "<small>" + gid + "</small></div>" +
+      '<div class="meta">' + brAno(b.ida) + " a " + brAno(b.volta) + " | " + b.adultos + " adulto" + (+b.adultos > 1 ? "s" : "") +
+      (+b.criancas ? " + " + b.criancas + " criança" + (+b.criancas > 1 ? "s" : "") : "") + " | " + combos + " combinaç" + (combos > 1 ? "ões" : "ão") + "</div>" +
+      '<div class="precos">Melhor preço atual: <b>' + (melhor ? usd(melhor) : "aguardando consulta") + "</b> | Target: <b>" + (b.target ? usd(+b.target) : "a definir") + "</b></div>" +
+      '<div class="meta">Duração: ' + limiteTxt(b.duracao_max) + " | Parada em " + brAno(b.parar_em) + "</div>" +
+      '<button class="verVoos" type="button" aria-expanded="false">Ver voos encontrados (' + combos + ')</button>' +
+      '<div class="voos"></div>' +
+      '<div class="editar"><input type="number" min="1" step="0.5" inputmode="decimal"><button class="principal">Salvar</button><button class="secundario">Cancelar</button></div>' +
+      '<div class="editarDatas"><div><label>Nova ida</label><input type="date" data-c="ida"></div><div><label>Nova volta</label><input type="date" data-c="volta"></div>' +
+      '<button class="principal">Salvar datas</button><button class="secundario">Cancelar</button></div></div>' +
+      '<div class="canhoto"><span class="estado' + (aguard ? " aguardando" : "") + '">' + (aguard ? "Aguardando target" : "Ativa") + "</span>" +
+      '<button class="secundario" data-a="target">' + (b.target ? "Alterar target" : "Definir target") + '</button>' +
+      '<button class="secundario" data-a="datas">Alterar datas</button><button class="secundario" data-a="duracao">Alterar duração</button><button class="perigo" data-a="encerrar">Encerrar</button></div>';
+    const ed = el.querySelector(".editar"), inp = ed.querySelector("input");
+    const edd = el.querySelector(".editarDatas"), dIda = edd.querySelector('[data-c="ida"]'), dVolta = edd.querySelector('[data-c="volta"]');
+    let modo = "target";
+    prepararData(dIda); prepararData(dVolta);
+    el.querySelector('[data-a="datas"]').onclick = () => { ed.classList.remove("aberto"); edd.classList.add("aberto");
+      dIda.value = b.ida; dVolta.value = b.volta; dIda._sync(); dVolta._sync(); dIda._texto.focus(); };
+    dIda.onchange = () => { if (dIda.value) dVolta.min = somaDias(dIda.value, 1); };
+    edd.querySelector(".secundario").onclick = () => edd.classList.remove("aberto");
+    edd.querySelector(".principal").onclick = () => alterarDatas(gid, membros, dIda.value, dVolta.value);
+    const abrir = m => { modo = m; edd.classList.remove("aberto"); ed.classList.add("aberto"); inp.value = (m === "target" ? b.target : b.duracao_max) || "";
+      inp.placeholder = m === "target" ? "US$" : "horas (vazio = sem limite)"; inp.focus(); };
+    el.querySelector('[data-a="target"]').onclick = () => abrir("target");
+    el.querySelector('[data-a="duracao"]').onclick = () => abrir("duracao");
     ed.querySelector(".secundario").onclick = () => ed.classList.remove("aberto");
-    ed.querySelector(".principal").onclick = () => alterar(b.id, "preco", inp.value.trim());
-    canhoto.querySelector('[data-a="encerrar"]').onclick = () => {
-      if (confirm("Encerrar a busca " + b.id + "? O robô deixa de procurar casas nesse local.")) alterar(b.id, "encerrar");
+    ed.querySelector(".principal").onclick = () => alterarGrupo(membros, modo, inp.value.trim());
+    el.querySelector('[data-a="encerrar"]').onclick = () => {
+      if (confirm("Encerrar o monitoramento de " + gid + "? O robô deixa de consultar " + (membros.length > 1 ? "as " + membros.length + " linhas desta viagem." : "esta viagem."))) alterarGrupo(membros, "encerrar");
     };
+    const bv = el.querySelector(".verVoos"), cx = el.querySelector(".voos");
+    const mostrarVoos = abrir => {
+      if (abrir) { cx.innerHTML = tabelaVoos(membros); voosAbertos.add(gid); } else voosAbertos.delete(gid);
+      cx.classList.toggle("aberto", abrir); bv.setAttribute("aria-expanded", abrir);
+      bv.textContent = (abrir ? "Ocultar voos encontrados" : "Ver voos encontrados") + " (" + combos + ")";
+    };
+    bv.onclick = () => mostrarVoos(!cx.classList.contains("aberto"));
+    if (voosAbertos.has(gid)) mostrarVoos(true);
     L.appendChild(el);
   });
 }
-async function alterar(id, acao, valor){
-  if (acao === "preco" && valor && !(+valor > 0)) { alert("Informe um valor em dólares maior que zero, ou deixe em branco para sem limite."); return; }
+
+async function alterarGrupo(membros, acao, valor){
+  if (acao === "target" && !(+valor > 0)) { alert("Informe um valor em dólares maior que zero."); return; }
+  if (acao === "duracao" && valor && !(+valor >= 1)) { alert("Informe a duração em horas (mínimo 1) ou deixe em branco para sem limite."); return; }
   try {
     await carregar(true);
-    const alvo = buscas.find(b => b.id === id && b.status === "ativa");
-    if (alvo && acao === "preco" && valor && alvo.preco_min && +valor < +alvo.preco_min) { alert("O preço máximo ficou menor que o mínimo (" + usd(alvo.preco_min) + ")."); return; }
-    const nova = buscas.map(b => {
-      if (b !== alvo) return b;
-      return acao === "encerrar" ? { ...b, status: "encerrada" } : { ...b, preco_max: valor ? String(Math.round(+valor)) : "" };
+    const ids = membros.map(m => m.id);
+    const nova = viagens.map(v => {
+      if (!ids.includes(v.id)) return v;
+      if (acao === "encerrar") return { ...v, status: "encerrada" };
+      if (acao === "duracao") return { ...v, duracao_max: valor ? String(+valor) : "" };
+      return { ...v, target: String(Math.round(+valor)), status: "ativa" };
     });
-    await gravarCsv(nova, (acao === "encerrar" ? "encerrar " : "preço máximo " + (valor || "sem limite") + " em ") + id);
+    const msgs = { encerrar: "encerrar ", duracao: "duração " + (valor || "sem limite") + " em ", target: "target " + valor + " em " };
+    await gravarCsv(nova, msgs[acao] + ids[0]);
     await carregar();
-    toast(acao === "encerrar" ? "Busca encerrada." : "Preço máximo salvo. Vale a partir da próxima busca semanal.");
+    toast(acao === "encerrar" ? "Viagem encerrada." : (acao === "duracao" ? "Duração salva." : "Target salvo.") + " Vale a partir da próxima consulta.");
+  } catch(e) { tratarErro(e); }
+}
+
+async function alterarDatas(gid, membros, ida, volta){
+  if (!ida || !volta) { alert("Informe a nova ida e a nova volta."); return; }
+  if (volta <= ida) { alert("A volta precisa ser depois da ida."); return; }
+  const parar = somaDias(ida, -PARADA_DIAS);
+  if (parar <= hojeChicago()) { alert("A nova ida é daqui a menos de 30 dias: o robô encerraria a busca na primeira consulta."); return; }
+  const b = membros.find(m => m.id === gid) || membros[0];
+  if (ida === b.ida && volta === b.volta) { alert("As datas são as mesmas de hoje."); return; }
+  if (!confirm("Mudar " + gid + " para " + brAno(ida) + " a " + brAno(volta) + "?\n\nO menor preço visto e os alertas desta viagem recomeçam do zero com as novas datas. A parada automática passa para " + brAno(parar) + ".")) return;
+  try {
+    await carregar(true);
+    const atuais = viagens.filter(v => membros.some(m => m.id === v.id));
+    const principal = atuais.find(v => v.id === gid) || atuais[0];
+    const dia = iso => new Date(iso + "T12:00:00Z").getTime() / 86400000;
+    const novas = atuais.map(v => {
+      const dIda = dia(v.ida) - dia(principal.ida), dVol = dia(v.volta) - dia(principal.volta);
+      const ni = somaDias(ida, dIda), nv = somaDias(volta, dVol);
+      const id = v.id === gid ? gid : (/-V\d{2}$/.test(v.id) ? gid + "-V" + nv.slice(8,10) : v.id);
+      return { ...v, id, ida: ni, volta: nv, parar_em: parar };
+    });
+    const outros = viagens.filter(v => !atuais.includes(v)).map(v => v.id);
+    const choque = novas.filter(n => outros.includes(n.id)).map(n => n.id);
+    if (choque.length) { toast("Já existe outra viagem com o nome " + choque.join(", ") + ". Escolha outras datas.", "erro"); return; }
+    let i = 0; const nova = viagens.map(v => atuais.includes(v) ? novas[i++] : v);
+    await gravarCsv(nova, "datas " + ida + " a " + volta + " em " + gid);
+    await carregar();
+    toast("Datas de " + gid + " salvas. O histórico de preços recomeça na próxima consulta.");
   } catch(e) { tratarErro(e); }
 }
 
 // ---------- carregamento ----------
 async function carregar(silencioso){
-  try { const csv = await lerArquivo(ARQ); buscas = parseCsv(csv.texto); shaCsv = csv.sha; }
-  catch(e) {
-    if (e.message !== "404") throw e;
-    try { await gh(""); } catch(e2) { if (e2.message === "404") throw new Error("SEMREPO"); throw e2; }
-    buscas = []; shaCsv = null;   // repositório acessível, só ainda não há buscas.csv
-  }
+  const csv = await lerArquivo("viagens.csv");
+  viagens = parseCsv(csv.texto); shaCsv = csv.sha;
   if (silencioso) return;
-  estado = await lerJson("estado.json");
-  const mes = hojeChicago().slice(0,7), usadas = estado.mes === mes ? (estado.requisicoes || 0) : 0;
-  const prev = consumoMes(ativas().length);
-  $("#cota .num").textContent = "Cota do mês: " + usadas + " de " + COTA + " requisições | ritmo das buscas ativas: ~" + prev + "/mês";
+  let hist;
+  [estado, alertas, hist] = await Promise.all([lerJson("estado.json"), lerJson("ja_alertados.json"),
+    lerArquivo("historico_precos.csv").then(r => r.texto).catch(e => { if (e.message === "TOKEN") throw e; return ""; })]);
+  historico = parseCsvAspas(hist);
+  const mes = hojeChicago().slice(0,7), usadas = estado.mes === mes ? (estado.buscas || 0) : 0;
+  const prev = consumoMes(viagens);
+  $("#cota .num").textContent = "Cota do mês: " + usadas + " de " + COTA + " buscas usadas | ritmo das viagens ativas: ~" + prev + "/mês";
   const bar = $("#barraCota"); bar.style.width = Math.min(100, usadas / COTA * 100) + "%"; bar.className = usadas >= COTA * .8 ? "alto" : "";
   desenharLista(); atualizarPrevia();
 }
@@ -357,33 +507,31 @@ function toast(t, cls = "certo"){ const m = $("#msg"); m.innerHTML = '<span clas
 function tratarErro(e){
   if (e.message === "TOKEN") { mostrar(false); $("#msgToken").innerHTML = '<p class="erro">O token foi recusado ou expirou. Gere um novo e cole acima.</p>'; return; }
   if (e.message === "CONFLITO") { toast("O robô atualizou o arquivo enquanto você editava. Os dados foram recarregados: repita a ação.", "aviso"); carregar(); return; }
-  if (e.message === "SEMREPO") { mostrar(false); $("#msgToken").innerHTML = '<p class="erro">Este token não tem acesso ao repositório Casas-FL-bot. Confira em GitHub → Settings → Developer settings → Fine-grained tokens se o Casas-FL-bot está selecionado com Contents: Read and write, ou gere um token novo e cole acima.</p>'; tokenSet(""); return; }
-  if (e.message === "404") { toast("Não encontrei o repositório Casas-FL-bot. Confira o nome e as permissões do token.", "erro"); return; }
+  if (e.message === "404") { toast("Não encontrei o viagens.csv no repositório bot-viagens. Confira o nome do repositório.", "erro"); return; }
   toast("Falha de comunicação com o GitHub (" + e.message + "). Verifique a internet e tente de novo.", "erro");
 }
 function mostrar(conectado){ $("#secToken").hidden = conectado; $("#secNova").hidden = !conectado; $("#secLista").hidden = !conectado; }
 
 // ---------- eventos ----------
 $("#form").addEventListener("input", atualizarPrevia);
-$("#modo").addEventListener("change", () => { sincronizarModo(); atualizarPrevia(); });
-document.querySelectorAll('input[name="fin"]').forEach(r => r.addEventListener("change", () => { sincronizarFinalidade(); atualizarPrevia(); }));
-$("#form").addEventListener("reset", () => setTimeout(() => { sincronizarModo(); sincronizarFinalidade(); atualizarPrevia(); $("#msg").innerHTML = ""; }));
+prepararData($("#ida")); prepararData($("#volta"));
+$("#form").addEventListener("reset", () => setTimeout(() => { $("#origem").value = "XNA"; $("#ida")._sync(); $("#volta")._sync(); atualizarPrevia(); $("#msg").innerHTML = ""; }));
+$("#ida").addEventListener("change", () => { if ($("#ida").value) $("#volta").min = somaDias($("#ida").value, 1); });
 $("#form").addEventListener("submit", async ev => {
   ev.preventDefault();
   const btn = $("#btnSalvar"); btn.disabled = true; btn.textContent = "Salvando…";
   try {
     await carregar(true);
-    const { b, erros } = montarBusca();
-    if (erros.length) { toast(erros.join(" "), "erro"); return; }
-    const total = consumoMes(ativas().length + 1);
-    if (total > COTA && !confirm("Com esta busca, o consumo previsto (" + total + "/mês) passa da cota gratuita de " + COTA + ". O robô pausaria as buscas antes do fim do mês. Salvar mesmo assim?")) return;
-    const semAntiga = buscas.filter(x => !(x.id === b.id && x.status === "encerrada"));
-    await gravarCsv(semAntiga.concat([b]), "nova busca " + b.id);
+    const r = montarLinhas();
+    if (r.erros.length) { toast(r.erros.join(" "), "erro"); return; }
+    const total = consumoMes(viagens) + (r.status === "ativa" ? r.linhas.reduce((s,l) => s + comb(l), 0) * POR_COMB_MES : 0);
+    if (total > COTA && !confirm("Com esta viagem, o consumo previsto (" + total + "/mês) passa da cota de " + COTA + ". O robô pausaria as consultas antes do fim do mês. Salvar mesmo assim?")) return;
+    await gravarCsv(viagens.concat(r.linhas), "nova viagem " + r.idBase);
     $("#form").reset();
     await carregar();
-    toast("Busca " + b.id + " salva. Ela entra na próxima busca semanal e no relatório de sábado.");
+    toast("Viagem " + r.idBase + " salva. O robô começa na próxima consulta programada.");
   } catch(e) { tratarErro(e); }
-  finally { btn.textContent = "Salvar busca"; atualizarPrevia(); }
+  finally { btn.textContent = "Salvar viagem"; atualizarPrevia(); }
 });
 $("#btnToken").onclick = async () => {
   const t = $("#token").value.trim(); if (!t) return;
@@ -394,7 +542,6 @@ $("#btnToken").onclick = async () => {
 $("#btnAtualizar").onclick = () => carregar().then(() => toast("Dados atualizados.")).catch(tratarErro);
 $("#btnEsquecer").onclick = () => { if (confirm("Remover o token deste navegador?")) { tokenSet(""); location.reload(); } };
 
-sincronizarModo(); sincronizarFinalidade();
 (async () => { if (!tokenGet()) { mostrar(false); return; } mostrar(true); try { await carregar(); } catch(e) { tratarErro(e); } })();
 </script>
 </body>
